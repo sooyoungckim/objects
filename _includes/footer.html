@@ -1,0 +1,34 @@
+<div class="container">
+  <div class='row' style="margin-top:5em;">
+      <footer>
+        <p>&copy; 2024 Soo-Young Kim & Trustees of Princeton University, Inc.</p>
+      </footer>
+  </div>
+</div>
+<div style="position:fixed;top:0px;left:0px;width:100px;padding:5% 5% 10px 5%">
+
+    <div style="position:relative">
+
+	  <a href="#!" class="hamburger"><img src="{{ "/assets/images/list-white.svg" | relative_url }}" style="height:40px"/></a>
+          <div id="site-menu-container" style="position:absolute;top:60px;left:0;z-index:280;background:black;">
+            <ul id="site-menu" style="list-style-type:none;margin-left:0px;padding-left:0px;background:black;">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+    </div>
+
+
+</div>
+
+<script>
+  jQuery(document).on("click", ".hamburger", function(e){
+    var menu = jQuery("#site-menu-container");
+    if(menu.hasClass('shown')) { menu.removeClass('shown'); }
+    else { menu.addClass('shown'); }
+    e.preventDefault();
+  });
+</script>
+
+</body>

@@ -1,0 +1,109 @@
+* {
+margin:0;
+padding:0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background:black;
+  color:white;
+  font-family: "EB Garamond", serif;
+/*
+  
+  font-size:16pt !important;
+  background-image:url(../images/line.svg);
+  background-position:top right;
+  background-repeat:no-repeat;
+  background-size:auto;
+*/
+}
+a {
+  color:white;
+}
+
+footer { font-size:0.85em; }
+
+h1 {margin:1em 0; font-size: 2.4em;}
+
+.hilight { color:#bad4e5; font-weight:bold; }
+
+#site-menu-container { display:none;}
+#site-menu-container.shown { display:block;}
+
+#site-menu li { padding: 0.2em 2em 0.2em 0.2em; background:black;}
+#site-menu li a {text-decoration:none;;}
+
+.tile { 
+  color:black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 4em 0 -11px 0;
+  text-decoration:none;
+  width:100%;
+}
+.tile a { color:black; width:50%; }
+.tile-left,.tile-right { width:50%;margin-bottom:-12px; }
+.tile-img { margin:0 10px; }
+.tile-content { margin:0 10px;padding:1em;font-weight:bold;font-size:1.1em; background:white;min-height:6.5em; height:100%; }
+
+.exhibit-list { padding:0px; }
+.exhibit-list li { list-style-type:none; }
+
+h2 { color:#bad4e5; }
+
+.serif {font-family: "Times New Roman", Times, serif; margin:1em 0; color:#bfd8d5;}
+
+.color0 { background:#cfddea; }
+.color1 { background:#eaffff; }
+.color2 { background:#bad4e5; }
+.color3 { background:#eae1c5; }
+.color4 { background:#bfd8d5; }
+.color5 { background:#d5e8e4; }
+.color6 { background:#e2ecd1; }
+.color7 { background:#eddde0; }
+.color8 { background:#d7dfac; }
+.color9 { background:#cfddea; }
+.color10 { background:#f3e0b6; }
+.color11 { background:#ebd5c7; }
+.color12 { background:#cec7bd; }
+.color13 { background:#fcf9cc; }
+.color14 { background:#e4c8d6; }
+.color15 { background:#eee0c3; }
+.color16 { background:#ced6e3; }
+
+
+.image-cycle li { width:80%; margin: 0 auto;}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .site-title { display:block;}
+  .mobile-site-title { display:none; }
+  .image-cycle { margin:0; }
+  .tile { 
+    width:50%;  
+    min-width:200px;
+   }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (max-width: 650px) {
+  .tile { 
+    width:100%;  
+   }
+}
+
+
+/**** sources page ****/
+
+.project-title {
+  color:#bad4e5;
+  font-weight:bold;
+  font-size:1.3em;
+    margin-top:3em;
+}
+.hanging-indent {
+  padding-left: 22px;
+  text-indent: -22px ;
+}
